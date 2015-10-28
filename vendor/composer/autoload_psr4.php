@@ -26,6 +26,7 @@ return array(
     'Pingpong\\Modules\\' => array($vendorDir . '/pingpong/modules'),
     'Pingpong\\Generators\\' => array($vendorDir . '/pingpong/generators'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Modules\\' => array($baseDir . '/modules'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),

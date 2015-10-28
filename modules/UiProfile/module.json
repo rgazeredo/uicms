@@ -1,0 +1,15 @@
+{
+    "name": "UiProfile",
+    "alias": "uiprofile",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\UiProfile\\Providers\\UiProfileServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}

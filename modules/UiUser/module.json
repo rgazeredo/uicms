@@ -1,0 +1,15 @@
+{
+    "name": "UiUser",
+    "alias": "uiuser",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\UiUser\\Providers\\UiUserServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}

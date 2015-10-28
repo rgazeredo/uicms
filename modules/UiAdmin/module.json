@@ -1,12 +1,12 @@
 {
-    "name": "UiProfile",
-    "alias": "uiprofile",
+    "name": "UiAdmin",
+    "alias": "uiadmin",
     "description": "",
     "keywords": [],
     "active": 1,
-    "order": 1,
+    "order": 0,
     "providers": [
-        "Modules\\UiProfile\\Providers\\UiProfileServiceProvider"
+        "Modules\\UiAdmin\\Providers\\UiAdminServiceProvider"
     ],
     "aliases":{},
     "files": [

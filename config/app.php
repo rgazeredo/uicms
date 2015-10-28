@@ -145,6 +145,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * Pingpong Sky Modules
+         */
+        'Pingpong\Modules\ModulesServiceProvider',
+
     ],
 
     /*
@@ -193,6 +198,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /**
+         * Pingpong Sky Modules
+         */
+        'Module' => 'Pingpong\Modules\Facades\Module',
 
     ],
 

@@ -24,12 +24,12 @@ class CreateUiMenuTable extends Migration {
         {
             $table->increments('id');
             $table->integer('ui_menu_id')->unsigned();
-            $table->integer('parent_id');
+            $table->integer('parent_id')->nullable();
             $table->string('name', 128);
             $table->tinyInteger('menu_type')->default(0);
             $table->string('link', 128);
             $table->tinyInteger('target')->default(0);
-            $table->integer('position');
+            $table->integer('position')->nullable();
             $table->timestamps();
             $table->foreign('ui_menu_id')->references('id')->on('ui_menu');
         });

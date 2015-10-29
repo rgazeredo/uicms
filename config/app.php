@@ -146,9 +146,15 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /**
+         * Laravel Collective
+         */
+
+        Collective\Html\HtmlServiceProvider::class,
+        /**
          * Pingpong Sky Modules
          */
         'Pingpong\Modules\ModulesServiceProvider',
+
 
     ],
 
@@ -198,6 +204,13 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /**
+         * Laravel Collective
+         */
+
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
         /**
          * Pingpong Sky Modules

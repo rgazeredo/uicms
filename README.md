@@ -8,6 +8,10 @@ A simple CMS made with laravel
 or
 - sudo composer install
 
+# config db
+
+- edit .env options
+
 # migrations
 
 - php artisan module:migrate
@@ -19,5 +23,7 @@ or
 #run
 
 - php artisan serve
+
+- http://localhost:8000/uiadmin
 
 

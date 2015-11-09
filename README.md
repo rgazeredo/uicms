@@ -10,7 +10,7 @@ or
 
 # config db
 
-- edit .env options
+- edit .env file
 
 # migrations
 
@@ -19,6 +19,12 @@ or
 # seeds
 
 - php artisan db:seed
+
+# permissions
+
+- chmod -R 777 storage
+or 
+- sudo chmod -R 777 storage
 
 #run
 

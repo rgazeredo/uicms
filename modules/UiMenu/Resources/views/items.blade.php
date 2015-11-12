@@ -184,6 +184,7 @@
                     table: "ui_module_action",
                     value: "link",
                     label: "name",
+                    _token: '{{ csrf_token() }}',
                     conditions: [
                         {
                             field: "ui_module_id",
@@ -219,6 +220,7 @@
                 form: "#formMenuItens",
                 table: "ui_menu_item",
                 callback: 'reloadPage',
+                _token: '{{ csrf_token() }}',
                 validate: true
             });
         });
@@ -238,6 +240,7 @@
                 url: "<?php echo url('uiadmin/uiajax/uimodalsave') ?>",
                 form: "#formMenuItens",
                 table: "ui_menu_item",
+                _token: '{{ csrf_token() }}',
                 callback: 'reloadPage',
                 validate: true
             });
@@ -252,6 +255,7 @@
                 url: "<?php echo url('uiadmin/uiajax/uifind') ?>",
                 table: "ui_menu_item",
                 id: id,
+                _token: '{{ csrf_token() }}',
                 callback: 'uiFindResult',
             });
         });
@@ -266,6 +270,7 @@
                 url: "<?php echo url('uiadmin/uiajax/uimodalremove') ?>",
                 form: "#formMenuItensRemove",
                 table: "ui_menu_item",
+                _token: '{{ csrf_token() }}',
                 callback: 'reloadPage'
             });
         });
@@ -295,6 +300,7 @@
             url: "<?php echo url('uiadmin/uiajax/uimodalsave') ?>",
             form: "#formMenuItens",
             table: "ui_menu_item",
+            _token: '{{ csrf_token() }}',
             callback: 'reloadPage',
             validate: true
         });

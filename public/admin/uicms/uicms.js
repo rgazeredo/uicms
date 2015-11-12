@@ -61,6 +61,7 @@
                                         url: params.url,
                                         table: params.table,
                                         convert: params.convert,
+                                        _token: params._token,
                                         callback: params.callback
                                     }
                                 );
@@ -72,6 +73,7 @@
                                 url: params.url,
                                 table: params.table,
                                 convert: params.convert,
+                                _token: params._token,
                                 callback: params.callback
                             }
                         );
@@ -107,6 +109,7 @@
                             {
                                 url: params.url,
                                 table: params.table,
+                                _token: params._token,
                                 callback: params.callback
                             });
                         }
@@ -128,6 +131,7 @@
 
         var data = form.serializeArray();
             data.push({name:'table', value:params.table});
+            data.push({name:'_token', value:params._token});
             
         if(params.convert)
         	data.push({name:'convert', value:params.convert});
@@ -166,6 +170,7 @@
 
         var data = form.serializeArray();
             data.push({name:'table', value:params.table});
+            data.push({name:'_token', value:params._token});
 
         //Realiza consulta ajax com o parametros informados
         $.ajax({
